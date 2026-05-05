@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет | Абзалтдинова Азалия</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #fff;
+      color: #0f172a;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+    h1, h2, h3 {
+      font-family: 'Unbounded', sans-serif;
+    }
+    .header {
+      background: #F1DFEF;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    .nav__list {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+    .nav__link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #111;
+    }
+    .nav__link:hover {
+      color: #1e40af;
+    }
+    .profile-hero {
+      background: #FDF2F8;
+      padding: 40px 0;
+      text-align: center;
+    }
+    .profile-name {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+    .profile-email {
+      color: #475569;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      background: white;
+      border-radius: 28px;
+      padding: 12px 24px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+      min-width: 120px;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1e40af;
+    }
+    
+    .dashboard {
+      padding: 50px 0;
+    }
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    @media (max-width: 1100px) {
+      .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 700px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+    .progress-bar {
+      background: #e2e8f0;
+      border-radius: 30px;
+      height: 10px;
+      margin: 15px 0;
+    }
+    .progress-fill {
+      background: #1e40af;
+      width: 0%;
+      height: 10px;
+      border-radius: 30px;
+    }
+    .topic, .exercise-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef2f6;
+      cursor: pointer;
+    }
+    .topic.done, .exercise-item.done {
+      color: #15803d;
+      text-decoration: line-through;
+    }
+    .test-result {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef2f6;
+    }
+    .btn {
+      margin-top: 20px;
+      background: #e2e8f0;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 40px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background: #cbd5e1;
+    }
+    .footer {
+      background: #F1DFEF;
+      padding: 40px 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .footer__nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+    .footer__link {
+      text-decoration: none;
+      color: #111;
+    }
+    .footer__social {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .footer__social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo"><img src="Image.png" alt="Лого"></div>
+      <nav><ul class="nav__list">
+        <li><a href="уроки.html" class="nav__link">Уроки</a></li>
+        <li><a href="тест.html" class="nav__link">Тест</a></li>
+        <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+      </ul></nav>
+      <div></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-hero">
+      <div class="container">
+        <h1 class="profile-name">Абзалтдинова Азалия</h1>
+        <p class="profile-email">azalia@htmlcourse.ru</p>
+        <div class="stats">
+          <div class="stat-card"><span class="stat-value" id="lessonsCount">0</span><br>уроков</div>
+          <div class="stat-card"><span class="stat-value" id="avgScore">0%</span><br>средний балл</div>
+          <div class="stat-card"><span class="stat-value" id="exCount">0</span><br>упражнений</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="container">
+        <div class="dashboard-grid">
+          <div class="card">
+            <h2>📊 Прогресс</h2>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <p id="progressText">0 из 5 уроков</p>
+            <div id="lessonsList"></div>
+          </div>
+          <div class="card">
+            <h2>📝 Тесты</h2>
+            <div id="testsList"></div>
+            <button class="btn" id="resetTests">Сбросить тесты</button>
+          </div>
+          <div class="card">
+            <h2>✏️ Упражнения</h2>
+            <div id="exercisesList"></div>
+            <button class="btn" id="resetExercises">Сбросить упражнения</button>
+          </div>
+          <div class="card">
+            <h2>🚀 Что дальше?</h2>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+              <li>Повторить видеоурок</li>
+              <li>Сделать финальный проект</li>
+            </ul>
+            <button class="btn" id="resetAll">Сбросить всё</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__nav">
+        <a href="уроки.html" class="footer__link">Уроки</a>
+        <a href="тест.html" class="footer__link">Тест</a>
+        <a href="profile.html" class="footer__link">Личный кабинет</a>
+      </div>
+      <div class="footer__social">
+        <a href="#"><img src="тг.png" class="footer__social-icon"></a>
+        <a href="#"><img src="инста.png" class="footer__social-icon"></a>
+        <a href="#"><img src="вк.png" class="footer__social-icon"></a>
+      </div>
+      <p>info@htmlcourse.ru</p>
+      <p>©2026 Строим веб-сайты с нуля на HTML</p>
+    </div>
+  </footer>
+
+  <script>
+    
+    let user = {
+      lessons: [
+        { name: "Основы HTML", done: true },
+        { name: "Ссылки и изображения", done: true },
+        { name: "Формы и таблицы", done: false },
+        { name: "Финальный проект", done: false },
+        { name: "Структура документа", done: false }
+      ],
+      tests: [
+        { name: "Основы HTML", score: 8, max: 10 },
+        { name: "Ссылки и изображения", score: 9, max: 10 },
+        { name: "Итоговый тест", score: null, max: 10 }
+      ],
+      exercises: [
+        { name: "Задание 1: заголовок", done: true },
+        { name: "Задание 2: ссылка", done: true },
+        { name: "Задание 3: картинка", done: false }
+      ]
+    };
+
+    
+    const saved = localStorage.getItem("simpleProfile");
+    if (saved) {
+      user = JSON.parse(saved);
+    } else {
+      localStorage.setItem("simpleProfile", JSON.stringify(user));
+    }
+
+    function save() {
+      localStorage.setItem("simpleProfile", JSON.stringify(user));
+      render();
+    }
+
+    function render() {
+    
+      const lessonsDone = user.lessons.filter(l => l.done).length;
+      document.getElementById("lessonsCount").innerText = lessonsDone;
+      document.getElementById("progressFill").style.width = (lessonsDone / user.lessons.length * 100) + "%";
+      document.getElementById("progressText").innerText = `${lessonsDone} из ${user.lessons.length} уроков`;
+
+      const validTests = user.tests.filter(t => t.score !== null);
+      const avg = validTests.length ? Math.round(validTests.reduce((s,t)=> s + (t.score/t.max)*100,0)/validTests.length) : 0;
+      document.getElementById("avgScore").innerText = avg + "%";
+      
+      const exDone = user.exercises.filter(e => e.done).length;
+      document.getElementById("exCount").innerText = exDone;
+
+      const lessonsDiv = document.getElementById("lessonsList");
+      lessonsDiv.innerHTML = "";
+      user.lessons.forEach((l, i) => {
+        const div = document.createElement("div");
+        div.className = "topic" + (l.done ? " done" : "");
+        div.innerHTML = `<span>${l.name}</span><span>${l.done ? "✔" : "○"}</span>`;
+        div.onclick = () => { user.lessons[i].done = !user.lessons[i].done; save(); };
+        lessonsDiv.appendChild(div);
+      });
+
+  
+      const testsDiv = document.getElementById("testsList");
+      testsDiv.innerHTML = "";
+      user.tests.forEach(t => {
+        const div = document.createElement("div");
+        div.className = "test-result";
+        div.innerHTML = `<span>${t.name}</span><span>${t.score !== null ? t.score+"/"+t.max : "—"}</span>`;
+        testsDiv.appendChild(div);
+      });
+
+      const exDiv = document.getElementById("exercisesList");
+      exDiv.innerHTML = "";
+      user.exercises.forEach((e, i) => {
+        const div = document.createElement("div");
+        div.className = "exercise-item" + (e.done ? " done" : "");
+        div.innerHTML = `<span>${e.name}</span><span>${e.done ? "✔" : "○"}</span>`;
+        div.onclick = () => { user.exercises[i].done = !user.exercises[i].done; save(); };
+        exDiv.appendChild(div);
+      });
+    }
+
+  
+    document.getElementById("resetTests").onclick = () => {
+      user.tests.forEach(t => { t.score = null; });
+      save();
+    };
+    document.getElementById("resetExercises").onclick = () => {
+      user.exercises.forEach(e => { e.done = false; });
+      save();
+    };
+    document.getElementById("resetAll").onclick = () => {
+      if (confirm("Сбросить весь прогресс?")) {
+        user.lessons.forEach(l => l.done = false);
+        user.tests.forEach(t => t.score = null);
+        user.exercises.forEach(e => e.done = false);
+        save();
+      }
+    };
+
+    render();
+  </script>
+</body>
+</html>

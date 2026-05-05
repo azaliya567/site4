@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Структура HTML документа | Основы вёрстки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="F:\сайт\css\structure.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <img src="Image.png" alt="Логотип курса">
+      </div>
+      <nav class="nav nav--center">
+        <ul class="nav__list">
+          <li><a href="уроки.html" class="nav__link">Уроки</a></li>
+          <li><a href="тест.html" class="nav__link">Тест</a></li>
+          <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      <div class="header__spacer"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--small">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">Структура HTML‑документа</h1>
+        <p class="hero__desc">Разбираем основные теги, учимся писать код и сразу проверяем в редакторе.</p>
+      </div>
+    </section>
+
+    <section class="theory-full">
+      <div class="container">
+        <div class="theory-block">
+          <h2 class="section-title">Структура HTML-документа</h2>
+          <p>Любая HTML-страница начинается с объявления типа документа: <code>&lt;!DOCTYPE html&gt;</code>. Далее идёт корневой элемент <code>&lt;html&gt;</code>, внутри которого два основных раздела:</p>
+          <ul>
+            <li><strong>&lt;head&gt;</strong> – техническая информация (кодировка, заголовок вкладки, подключение стилей).</li>
+            <li><strong>&lt;body&gt;</strong> – всё, что видит пользователь: текст, картинки, кнопки.</li>
+          </ul>
+        </div>
+
+        <div class="theory-block">
+          <h2 class="section-title"> Текст и заголовки</h2>
+          <p>HTML предлагает 6 уровней заголовков: от <code>&lt;h1&gt;</code> (самый важный) до <code>&lt;h6&gt;</code> (самый мелкий). Текст оформляется абзацами <code>&lt;p&gt;</code>. Для переноса строки внутри абзаца используется <code>&lt;br&gt;</code> (без закрывающего тега). Форматирование: <code>&lt;strong&gt;</code> – жирный, <code>&lt;em&gt;</code> – курсив.</p>
+        </div>
+
+        <div class="theory-block">
+          <h2 class="section-title"> Ссылки и изображения</h2>
+          <p>Ссылка создаётся тегом <code>&lt;a&gt;</code> с атрибутом <code>href="адрес"</code>. Пример: <code>&lt;a href="https://google.com"&gt;Перейти в Google&lt;/a&gt;</code></p>
+          <p>Изображение – тег <code>&lt;img&gt;</code> с атрибутами <code>src</code> (путь к файлу) и <code>alt</code> (текст-заменитель). Пример: <code>&lt;img src="photo.jpg" alt="Моё фото"&gt;</code></p>
+        </div>
+
+        <div class="theory-block">
+          <h2 class="section-title"> Списки и таблицы</h2>
+          <p><strong>Маркированный список:</strong> <code>&lt;ul&gt;</code> (unordered list), внутри <code>&lt;li&gt;</code> – пункты.</p>
+          <p><strong>Нумерованный список:</strong> <code>&lt;ol&gt;</code> (ordered list), внутри <code>&lt;li&gt;</code>.</p>
+          <p><strong>Таблица:</strong> <code>&lt;table&gt;</code> → <code>&lt;tr&gt;</code> (строка) → <code>&lt;td&gt;</code> (ячейка) или <code>&lt;th&gt;</code> (заголовок).</p>
+        </div>
+
+        <div class="theory-block">
+          <h2 class="section-title"> Формы и кнопки</h2>
+          <p>Форма <code>&lt;form&gt;</code> служит для отправки данных на сервер. Основные элементы:</p>
+          <ul>
+            <li><code>&lt;input type="text"&gt;</code> – текстовое поле</li>
+            <li><code>&lt;input type="password"&gt;</code> – поле для пароля</li>
+            <li><code>&lt;input type="radio"&gt;</code> – радиокнопка (выбор одного из нескольких)</li>
+            <li><code>&lt;input type="checkbox"&gt;</code> – флажок</li>
+            <li><code>&lt;button type="submit"&gt;</code> – кнопка отправки</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="editor-section">
+      <div class="container">
+        <h2 class="section-title"> Попробуй сам</h2>
+        <p class="editor-description">Напиши HTML‑код в левом окне и нажми «Запустить код», чтобы увидеть результат.</p>
+        <div class="editor-container">
+          <div class="editor-panel">
+            <div class="editor-header">
+              <span>📝 HTML код</span>
+              <i>редактируй</i>
+            </div>
+            <textarea id="codeEditor" class="code-area" spellcheck="false">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Моя первая страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это моя первая веб-страница, созданная в редакторе.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;HTML — это просто&lt;/li&gt;
+        &lt;li&gt;Практика — ключ к успеху&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+            <button id="runBtn" class="btn btn--primary run-btn">▶ Запустить код</button>
+          </div>
+          <div class="editor-panel">
+            <div class="editor-header">
+              <span>👁 Результат</span>
+              <i>обновляется</i>
+            </div>
+            <iframe id="resultFrame" class="result-frame" title="Результат HTML кода" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__nav">
+        <a href="уроки.html" class="footer__link">Уроки</a>
+        <a href="тест.html" class="footer__link">Тест</a>
+        <a href="profile.html" class="footer__link">Личный кабинет</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="тг.png" alt="Telegram" class="footer__social-icon">
+        </a>
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="инста.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="вк.png" alt="VK" class="footer__social-icon">
+        </a>
+      </div>
+      <p class="footer__contact">По вопросам: info@htmlcourse.ru</p>
+      <p class="footer__copy">©2026 Строим веб-сайты с нуля на HTML. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+    const editor = document.getElementById('codeEditor');
+    const iframe = document.getElementById('resultFrame');
+    const runBtn = document.getElementById('runBtn');
+
+    function updateResult() {
+      const code = editor.value;
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      doc.open();
+      doc.write(code);
+      doc.close();
+    }
+
+    runBtn.addEventListener('click', updateResult);
+    updateResult();
+  </script>
+</body>
+</html>

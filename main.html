@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Строим веб-сайты с нуля на HTML | Курс вёрстки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="C:\Users\Азалия\Downloads\сайт\css\style.css">
+  <style>
+    /* Дополнительный стиль, чтобы заголовок стал белым */
+    .hero__title {
+      color: white;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <img src="Image.png" alt="Логотип курса">
+      </div>
+      <nav class="nav nav--center">
+        <ul class="nav__list">
+          <li><a href="уроки.html" class="nav__link">Уроки</a></li>
+          <li><a href="тест.html" class="nav__link">Тест</a></li>
+          <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+        </ul>
+      </nav>
+      <div class="header__spacer"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">Строим веб-сайты с нуля на HTML</h1>
+        <p class="hero__desc">4 урока — и ты сможешь сверстать собственную веб-страницу. Никакого сложного кода, только понятные примеры и практика.</p>
+        <a href="#" class="btn btn--primary">Начать обучение</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="section-title">О курсе</h2>
+        <div class="cards-grid">
+          <div class="course-card">
+            <h3 class="course-card__title">Основы HTML. Первый код</h3>
+            <p class="course-card__subtitle">Что изучим:</p>
+            <ul class="course-card__list">
+              <li>Как устроена веб-страница (теги, атрибуты, структура)</li>
+              <li>Обязательные элементы: <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code></li>
+              <li>Заголовки <code>&lt;h1&gt;–&lt;h6&gt;</code> и абзацы <code>&lt;p&gt;</code></li>
+              <li>Сохранение и открытие .html файла в браузере</li>
+            </ul>
+          </div>
+          <div class="course-card">
+            <h3 class="course-card__title">Ссылки и изображения</h3>
+            <p class="course-card__subtitle">Что изучим:</p>
+            <ul class="course-card__list">
+              <li>Создание ссылок с помощью <code>&lt;a&gt;</code> и атрибута <code>href</code></li>
+              <li>Открытие ссылок в новой вкладке (<code>target="_blank"</code>)</li>
+              <li>Вставка изображений через <code>&lt;img&gt;</code> (атрибуты <code>src</code>, <code>alt</code>)</li>
+              <li>Картинка как ссылка</li>
+            </ul>
+          </div>
+          <div class="course-card">
+            <h3 class="course-card__title">Формы и таблицы</h3>
+            <p class="course-card__subtitle">Что изучим:</p>
+            <ul class="course-card__list">
+              <li>Создание форм: <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code></li>
+              <li>Разные типы полей: текст, email, пароль, чекбокс, радиокнопка</li>
+              <li>Простые таблицы: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
+            </ul>
+          </div>
+          <div class="course-card">
+            <h3 class="course-card__title">Финальный проект. Свой первый сайт</h3>
+            <p class="course-card__subtitle">Что изучим:</p>
+            <ul class="course-card__list">
+              <li>Сборка всех тем в один проект</li>
+              <li>Основы семантической вёрстки (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+              <li>Как выложить сайт на GitHub Pages (бесплатный хостинг)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="for-whom-vertical">
+      <div class="container">
+        <h2 class="section-title">Для кого этот курс</h2>
+        <div class="cards-vertical">
+          <div class="card-vertical">
+            <img src="иконка 1.jpg" class="card-vertical__photo" alt="Ученик">
+            <p class="card-vertical__text">Ученикам 10–11 классов, которые хотят попробовать себя в веб-разработке</p>
+          </div>
+          <div class="card-vertical">
+            <img src="иконка 2.jpg" class="card-vertical__photo" alt="Новичок">
+            <p class="card-vertical__text">Тем, кто никогда не писал код, но хочет начать с простого</p>
+          </div>
+          <div class="card-vertical">
+            <img src="иконка 3.jpg" class="card-vertical__photo" alt="Мечтатель">
+            <p class="card-vertical__text">Всем, кто мечтает создать свой сайт-визитку или блог</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="section-title">Что ты научишься делать</h2>
+        <ul class="skills__list">
+          <li>Писать чистый HTML-код без ошибок</li>
+          <li>Создавать страницы с текстом, картинками и ссылками</li>
+          <li>Понимать структуру любого сайта</li>
+          <li>Сделать свой первый проект и выложить его на GitHub Pages</li>
+        </ul>
+        <div class="skills__cta">
+          <p class="skills__cta-text">Готов попробовать? <br> Урок 1 уже ждёт тебя.</p>
+          <a href="#" class="btn btn--primary">Начать обучение</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__nav">
+        <a href="уроки.html" class="footer__link">Уроки</a>
+        <a href="тест.html" class="footer__link">Тест</a>
+        <a href="profile.html" class="footer__link">Личный кабинет</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="тг.png" alt="Telegram" class="footer__social-icon">
+        </a>
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="инста.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+          <img src="вк.png" alt="VK" class="footer__social-icon">
+        </a> 
+      </div>
+      <p class="footer__contact">По вопросам: info@htmlcourse.ru</p>
+      <p class="footer__copy">©2026 Строим веб-сайты с нуля на HTML. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
